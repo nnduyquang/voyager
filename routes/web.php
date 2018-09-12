@@ -18,5 +18,6 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+    Route::get('admin/post', ['as' => 'post.index', 'uses' => 'PostController@index']);
 //    Route::get('sml_admin/post', ['as' => 'voyager.posts.create', 'uses' => 'PostController@create', 'middleware' => ['permission:page-list|page-create|page-edit|page-delete']]);
 });
