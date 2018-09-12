@@ -120,13 +120,14 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'vi',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
             'en',
+            'vi'
             //'pt',
         ],
     ],
@@ -205,7 +206,7 @@ return [
 
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [
-        //'css/custom.css',
+        'css/backend.css',
     ],
 
     'additional_js' => [
